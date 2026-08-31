@@ -1,38 +1,70 @@
-/*SELECIONA TODOS OS ELEMENTOS*/
-*{
-    margin: 12px;
-    padding: 12px;
-
+/* --- Estilos Gerais --- */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif; /* Uma fonte padrão psrecido ao da imagem*/
+    background-color: #746f6f; /* Fundo cinza escuro pra página inteira */
+    text-align: center; /* Centraliza o texto inteiro de toda página*/
 }
 
-
-/*Estilizando o body*/
-body{
-  background-color: dimgrey;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    padding-top: 20px;
-    padding-left: 30px;
-    padding-right: 30px;
-    padding-bottom: 50px;
-    
-    }
-
-    #topo{
-   margin: 15px 0px;
-   padding: 10px;
-
+/* --- espaço  externo do título principal h1 --- */
+#principal {
+    max-width: 900px; /* Largura máxima, para não esticar muito */
+    margin: 0 auto;  /* Centraliza o título princiapl h1 na tela horizontalmente */
+    border: 1px solid #ddd; /* Uma borda sutil*/
 }
 
-    .texto-top{
-    font-style: italic;
-    text-decoration: underline;
-    font-size: 25px;
-
+/* --- Estilos do Cabeçalho (Topo) --- */
+.meu-cabecalho {
+    background-color: #cccccc; /* Cinza médio do fundo */
+    color: #ffffff;             /* Texto branco */
+    padding: 30px;              /* Espaço interno pra o texto não encostar nas bordas */
 }
 
-  .texto-top1{
-    font-style: italic;
-    text-decoration: underline;
-    font-size: 25px;
+.meu-cabecalho h1 {
+    margin: 0;
+    font-weight: bold;
+    font-size: 24px;
+}
 
+/* -- Área Vermelha (Conteúdo Principal) -- */
+.meu-conteudo-vermelho {
+    background-color: #e74c3c; /* Vermelho vibrante (pode ajustar o tom se quiser) */
+    padding: 20px 0;           /* Espaço interno vertical, para dar respiro aos blocos */
+}
+
+/* --Estilos dos Blocos Verdes -- */
+.caixa-verde {
+    background-color: #27ae60; /* Verde vibrante */
+    color: #000000;            /* Texto preto */
+    width: 90%;                /* Ocupa 90% da largura do seu pai (área vermelha) */
+    margin: 15px auto;          /* Centraliza a caixa que cria espaço entre eles */
+    padding: 20px;             /* Espaço interno para o texto */
+    border-radius: 3px;       /* Um cantinho levemente arredondado*/
+}
+
+/* Estilo para os títulos (H2) dentro das caizas-verdes */
+.caixa-verde {
+    font-size: 1.5em;
+    font-weight: bold;
+    margin-top: 0;
+}
+
+/* Estilo para os parágrafos (P) dentro das caixas-verdes */
+.caixa-verde{
+    font-size: 1em;
+    margin: 5px 0; /* Espaço pequeno entre os parágrafos */
+}
+
+/* --Estilos do Rodapé (Base)-- */
+.meu-rodape {
+    background-color: #e4d9d9; /* Um cinza um pouco mais claro que o topo */
+    color: #ffffff;             /* Texto branco */
+    padding: 20px;
+}
+
+/estilização do paragrafo do rodapé/
+.meu-rodape p {
+    margin: 0;
+    font-size: 1em;
 }
