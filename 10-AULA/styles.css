@@ -5,8 +5,6 @@
 
 }
 
-
-
 /*SELETOR POR TAG*/
 body{
     background-color: azure;
@@ -53,9 +51,67 @@ body{
     font-weight: bolder;
     color: darkred;  
 }
-
+/*#AAAA*/
 #caixa-unica{
     padding: 10px;
     border: 2px purple;
     background-color: #ede9fe;
+    
+}
+  /*selecciona todos os 'p' que estão dentro de uma div*/
+}
+ div p{
+    color: blue;
+}
+/*seleciona todos os 'p' que são filhos diretos da class especifica*/
+.pai-direto > p{
+color: green;
+padding: 5px;
+}
+/*seleciona todo o 'p' que vem logo após um h3, desde que seja irmão*/
+h3+ p{
+    color: red;
+
+}
+/* seleciona tososo os 'p' que vem após o h4, desde qie sejam  irmãos*/
+h4 ~ p{
+    background-color: blueviolet;
+    color: yellow;
+}
+/*selelciona todoso os 'inputs', que tenham o tipo texto*/
+input[type="text"]{
+    border: 2px solid orange;
+    padding: 8px;
+    margin-right: 10px;
+}
+/*seleciona todos oslinks que tenham esse valor no href*/
+a[href*="microsoft"]{
+    color: green;
+    font-weight: bolder;
+}
+/* mesmo estilo prara dias tags ou mais*/
+h5, h6{
+    color: purple;
+    margin: 5px 0px;
+    font-weight: bolder;
+}
+/*seleciona o elelmento que tem as duas classes ao memso tempo*/
+.botao.ativo{
+    color: blueviolet;
+   font-size: 30px;
+   padding: 50px;
+}
+/* selelciona o 'p' desde que tenha a class aciso*/
+p.aviso{
+    color: chartreuse;
+}
+/*selelciona apenas a div que tenha o id painel*/
+div#painel{
+    background-color: red;
+    padding: 10px;
+}
+/*selecionando filho dentro de filho*/
+
+#menu ul li a{
+    color: violet;
 }
