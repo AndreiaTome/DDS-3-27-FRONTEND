@@ -47,11 +47,17 @@ body{
 .destaque{
     background-color: gold;
 }
+
+/*espaço interno de 10px margem para cima e para baixo de 15px borda de 10px no ".topo"*/
+/*ellemnteos da classe destaque tenham um fundo dourado*/
+/*tesxto desta negrito e cor darkred*/
+/* padding 10px caixa única. dorda 2px na cor sa caiza #ede9fe*/
+/*paletas de cpres hexadecimais*/
 .texto-destaque{
     font-weight: bolder;
     color: darkred;  
 }
-/*#AAAA*/
+
 #caixa-unica{
     padding: 10px;
     border: 2px purple;
@@ -59,7 +65,7 @@ body{
     
 }
   /*selecciona todos os 'p' que estão dentro de uma div*/
-}
+
  div p{
     color: blue;
 }
@@ -68,6 +74,7 @@ body{
 color: green;
 padding: 5px;
 }
+
 /*seleciona todo o 'p' que vem logo após um h3, desde que seja irmão*/
 h3+ p{
     color: red;
